@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+}
+
+.block{
+    height: 200px;
+    width: 300px;
+    background-color: darkmagenta;
+    border: 5px solid purple;
+}
+
+#text{
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+}
+
+@keyframes leftdoor{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(90deg);}
+}
+
+@keyframes rightdoor{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(90deg);}
+}
+
+.block:hover{
+    animation: leftdoor 2s infinite;
+}

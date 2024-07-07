@@ -1,0 +1,19 @@
+.conteiner{
+    height: 200px;
+    width: 600px;
+    background-color:beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.conteiner:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.p{
+    display: flex;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}

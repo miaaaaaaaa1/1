@@ -1,0 +1,56 @@
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid cadetblue;
+    position:relative;
+}
+
+.hand{
+    background-color: cadetblue;
+    transform-origin: 50% 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.min-arrow{
+    height: 1px;
+    width: 50px;
+    border: 2px solid cadetblue;
+    background-color: cadetblue;
+}
+
+.hour-arrow{
+    height: 1px;
+    width: 30px;
+    border: 1px solid cadetblue;
+    background-color: cadetblue;
+}
+
+.point{
+    top: 47.5%;
+    left: 48%;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+@keyframes rotate-minute{
+    from {transform: translate(-50%, -100%) rotate(0deg);}
+    to {transform: translate(-50%, -100%) rotate(360deg);}
+}
+
+@keyframes rotate-hour{
+    from {transform: translate(-50%, -100%) rotate(0deg);}
+    to {transform: translate(-50%, -100%) rotate(360deg);}
+}
+
+.minute-arrow{
+    animation: rotate-minute 3600s infinite linear;
+}
+
+.hour-arrow{
+    animation: rotate-hour 43200s infinite linear;
+}
